@@ -1,0 +1,11 @@
+ProductID,ProductName,Category,Price,StockQuantity,SKU
+PROD-001,Wireless Ergonomic Mouse,Electronics,49.99,120,ELEC-MSE-01
+PROD-002,Mechanical Gaming Keyboard,Electronics,89.99,75,ELEC-KBD-02
+PROD-003,27-inch 4K Monitor,Electronics,329.99,40,ELEC-MNT-03
+PROD-004,Noise-Canceling Headphones,Electronics,149.99,60,ELEC-HDP-04
+PROD-005,USB-C Dual Docking Station,Computers,119.99,85,COMP-DCK-05
+PROD-006,1080p HD Webcam,Electronics,59.99,110,ELEC-CAM-06
+PROD-007,Ergonomic Office Chair,Office Furniture,199.99,25,FURN-CHR-07
+PROD-008,Smart LED Desk Lamp,Home & Office,34.99,150,HOME-LMP-08
+PROD-009,1TB External SSD,Storage,89.99,95,STOR-SSD-09
+PROD-010,Bluetooth Pocket Speaker,Electronics,29.99,200,ELEC-SPK-10
