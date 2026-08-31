@@ -1,0 +1,8 @@
+Find students with SQL > 80.
+Find students from Information Technology.
+Find students with Python > 75 and SQL > 75.
+Find students with Statistics < 60.
+Find students aged between 20 and 25.
+Find students from Computer Science OR Electronics.
+Display only Name and Machine_Learning for students with ML score > 85.
+Find all female students with Python score > 80.
