@@ -6,3 +6,15 @@ Find students aged between 20 and 25.
 Find students from Computer Science OR Electronics.
 Display only Name and Machine_Learning for students with ML score > 85.
 Find all female students with Python score > 80.
+
+-- Questions on aggregate functions & group by
+Find the average score of each subject.
+Find the number of students in each department.
+Find the minimum SQL score for each department.
+Find the highest Python score for each department.
+Find the department with the highest average Machine Learning score.
+Find the department with the highest number of students.
+Find the department with the lowest average Python score.
+Find the average Python score for students in each department, but display only departments where the average is above 75.
+Find the number of students in each department who have a Machine Learning score greater than 80.
+Find the gender-wise average score for Python, SQL, and Machine Learning, and sort the result by average Machine Learning score from highest to lowest.
