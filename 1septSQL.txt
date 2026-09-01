@@ -1,0 +1,140 @@
+create database shop;
+use shop;
+select * from customers;
+select FirstName, LastName from Customers;
+
+-- distinct retrieves unique values from column
+select distinct(State) from customers;
+
+-- as keyword is used to give alias to column name or tables
+select CustomerID as cid from customers;
+
+select * from products
+where Category="Computers";
+
+select * from products
+where price>100;
+
+select * from products 
+where Category="Electronics"
+and Price>150;
+
+select * from products 
+where Category="Electronics"
+or Price>150;
+
+-- returns all products other than Computers
+select * from products
+where not category="Computers";
+
+-- rename table
+alter table customers rename to customer;
+
+select * from customer;
+
+select * from products
+order by StockQuantity desc;
+
+-- returns records where price column has Null values
+select * from products
+where Price IS NULL;
+
+-- limit retrieves a certain number of records
+select * from products
+where StockQuantity>10 LIMIT 5;
+
+select * from products
+where Category in ("Computers","Storage","Office Furniture");
+
+-- return records with price between 100 and 300;
+select * from products;
+
+select * from products
+where Price between 100 AND 300;
+
+select * from products
+where Category like "%a%";
+
+select count(*) from products where Category="Electronics";
+
+-- returns count of unique categories in products table
+select count(distinct category) from products;
+
+-- DROP TABLE
+drop table orders;
+
+select * from customer;
+select * from products;
+
+select avg(Price),avg(StockQuantity)
+from Products;
+
+select sum(Price) from Products
+where Category='Electronics';
+
+-- minimum price of electronics product
+select Min(Price) from Products
+where Category='Electronics';
+
+-- maximum price of electronics product
+select Max(Price) from Products
+where Category='Electronics';
+
+select * from customer;
+select count(*), State from customer 
+group by State;
+
+select * from products;
+-- group products based on Category
+-- & find sum(Price) per cateory
+select sum(Price), Category
+from products
+group by Category;
+
+-- find avg StockQuantity per category 
+select avg(StockQuantity), Category
+from products
+group by Category
+order by Category;
+
+-- group customers based on State
+-- and find the states having more than 10 count
+select count(*), State
+from customer
+group by State
+Having count(*)>10;
+
+-- group products in Categories, 
+-- find Categories with StockQuantity <10
+select count(StockQuantity), Category
+from products
+group by Category
+having count(StockQuantity) <10;
+
+select * from order_details;
+
+-- Customers who placed an order
+SELECT CustomerID, FirstName,LastName
+FROM customer
+WHERE CustomerID IN (
+    SELECT DISTINCT CustomerID 
+    FROM order_details
+);
+
+-- count orders per customer
+SELECT CustomerID, FirstName,LastName, 
+    (SELECT COUNT(*) 
+     FROM order_details as o 
+     WHERE o.CustomerID = c.CustomerID) AS total_orders
+FROM Customer as c;
+
+-- total price of all orders
+SELECT (SELECT SUM(total_amount) 
+FROM order_details) AS total_price;  
+
+-- product which had no sales
+SELECT ProductID,ProductName 
+FROM products 
+WHERE ProductID NOT IN 
+(SELECT DISTINCT ProductID
+ FROM order_details);  
