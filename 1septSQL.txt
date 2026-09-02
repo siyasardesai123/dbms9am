@@ -138,3 +138,50 @@ FROM products
 WHERE ProductID NOT IN 
 (SELECT DISTINCT ProductID
  FROM order_details);  
+ 
+ -- inner join-- returns customer records who placed order
+SELECT 
+    c.CustomerID,c.FirstName,o.order_id,o.total_amount
+FROM Customer c
+INNER JOIN order_details o 
+    ON c.CustomerID = o.CustomerID;
+    
+-- left join  -- returns all the customers 
+-- with orderid & amount. 
+-- Those who didnt place order, details are null
+SELECT c.FirstName, o.order_id, o.total_amount
+FROM Customer as c
+LEFT JOIN order_details as o 
+ON c.CustomerID = o.CustomerID;
+
+-- right join  
+-- returns all details  from order table
+-- & matching details in customer table
+SELECT  o.order_id,c.FirstName,o.total_amount
+FROM Customer as c
+RIGHT JOIN order_details as o 
+    ON c.CustomerID = o.CustomerID;
+    
+-- full outer join -- returns all details from both tables with matching records
+SELECT c.CustomerID,c.FirstName, o.order_id,o.total_amount
+FROM  Customer as c 
+LEFT JOIN order_details as o 
+ON c.CustomerID=o.CustomerID 
+UNION
+SELECT c.CustomerID,c.FirstName, o.order_id,o.total_amount
+FROM  Customer as c 
+RIGHT JOIN order_details as o  
+ON c.CustomerID=o.CustomerID;
+
+-- self join -- find repeat customers
+SELECT 
+    o1.CustomerID,
+    o1.order_id AS initial_order,
+    o1.order_date AS initial_date,
+    o2.order_id AS next_order,
+    o2.order_date AS next_date
+FROM order_details as o1
+INNER JOIN order_details as o2 
+    ON o1.CustomerID = o2.CustomerID
+    AND o1.order_id < o2.order_id
+ORDER BY o1.CustomerID;
