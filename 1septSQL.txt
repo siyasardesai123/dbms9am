@@ -185,3 +185,20 @@ INNER JOIN order_details as o2
     ON o1.CustomerID = o2.CustomerID
     AND o1.order_id < o2.order_id
 ORDER BY o1.CustomerID;
+
+-- self join -- customer from same state
+SELECT 
+    c1.FirstName AS customer_a,
+    c2.FirstName AS customer_b,
+    c1.State
+FROM customer c1
+INNER JOIN customer c2 
+    ON c1.State = c2.State 
+    AND c1.CustomerID < c2.CustomerID;
+    
+-- cross join 
+-- generate every possible combination of customers and orders
+SELECT 
+    c.CustomerID, c.FirstName, o.order_id
+FROM Customer c
+CROSS JOIN order_details o;
