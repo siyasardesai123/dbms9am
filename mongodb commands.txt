@@ -1,0 +1,37 @@
+show dbs
+
+db  -- gives current database
+test
+
+use class  -- creates database & switches to db
+
+db.createCollection("Teacher")
+
+db.Teacher.insertOne
+({name:"Meeta",age:30,course:"Data Science"})
+
+db.Teacher.insertMany
+([{name:"Raj",age:35,course:"Data Analytics"},
+{name:"Tina",age:25,course:"AI"}])
+
+db.Teacher.find()  -- returns all records
+
+db.Teacher.find({course:"Data Science"})
+
+db.Teacher.find({age:30,course:"Data Science"})  -- multiple conditions
+
+db.Teacher.find({age:{$gt:25}})
+
+db.Teacher.updateOne
+({name:"Meeta"},{$set:{age:40}})
+
+db.Teacher.updateMany
+({course:"AI"},{$set:{age:25}})
+
+db.Teacher.deleteOne({course:"AI"})
+
+db.Teacher.deleteMany({age:{$lt:30}})
+
+db.Teacher.find().sort({age:1}) #sort ascending
+
+db.Teacher.find().limit(2)  #first 2 records
