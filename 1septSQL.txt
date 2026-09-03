@@ -202,3 +202,22 @@ SELECT
     c.CustomerID, c.FirstName, o.order_id
 FROM Customer c
 CROSS JOIN order_details o;
+
+-- window functions performs calculations on set of rows
+select * from customer;
+-- rank() gives same rank to equal values but leaves gap
+select FirstName, SignUpDate,
+RANK() over( order by SignUpDate) as join_rank
+from customer;
+
+-- dense_rank() does not leaves gap 
+select * from customer;
+select FirstName, SignUpDate,
+dense_rank() over( order by SignUpDate) as join_rank
+from customer;
+
+-- partition by performs calculations separately for each group 
+select FirstName, SignUpDate, State,
+rank() over( partition by State order by SignUpDate) 
+as join_rank
+from customer;
