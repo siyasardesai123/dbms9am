@@ -1,0 +1,61 @@
+Enrollment_ID,Student_ID,Course_ID,Course_Name,Instructor,Course_Duration_Hours,Grade,Completion_Status
+E1001,1,C101,Python Programming,Dr. Mehta,40,A+,Completed
+E1002,2,C102,SQL Fundamentals,Prof. Sharma,35,B+,Completed
+E1003,3,C103,Data Analytics,Dr. Nair,45,A,Completed
+E1004,4,C104,Machine Learning,Prof. Patel,50,A+,Not Started
+E1005,5,C105,Web Development,Dr. Rao,40,C,Completed
+E1006,6,C106,Statistics for Data Science,Prof. Iyer,30,C,In Progress
+E1007,7,C107,Power BI,Dr. Singh,25,A+,Completed
+E1008,8,C108,AI Fundamentals,Prof. Verma,45,A+,Completed
+E1009,9,C101,Python Programming,Dr. Mehta,40,A,Not Started
+E1010,10,C102,SQL Fundamentals,Prof. Sharma,35,C,Completed
+E1011,11,C103,Data Analytics,Dr. Nair,45,C,Completed
+E1012,12,C104,Machine Learning,Prof. Patel,50,C,In Progress
+E1013,13,C105,Web Development,Dr. Rao,40,A,In Progress
+E1014,14,C106,Statistics for Data Science,Prof. Iyer,30,C,In Progress
+E1015,15,C107,Power BI,Dr. Singh,25,A+,Completed
+E1016,16,C108,AI Fundamentals,Prof. Verma,45,B,In Progress
+E1017,17,C101,Python Programming,Dr. Mehta,40,B+,Completed
+E1018,18,C102,SQL Fundamentals,Prof. Sharma,35,A,In Progress
+E1019,19,C103,Data Analytics,Dr. Nair,45,A+,Completed
+E1020,20,C104,Machine Learning,Prof. Patel,50,B,Completed
+E1021,21,C105,Web Development,Dr. Rao,40,B+,In Progress
+E1022,22,C106,Statistics for Data Science,Prof. Iyer,30,C,In Progress
+E1023,23,C107,Power BI,Dr. Singh,25,A+,Not Started
+E1024,24,C108,AI Fundamentals,Prof. Verma,45,B,Not Started
+E1025,25,C101,Python Programming,Dr. Mehta,40,A+,In Progress
+E1026,26,C102,SQL Fundamentals,Prof. Sharma,35,A+,Not Started
+E1027,27,C103,Data Analytics,Dr. Nair,45,B+,Not Started
+E1028,28,C104,Machine Learning,Prof. Patel,50,C,In Progress
+E1029,29,C105,Web Development,Dr. Rao,40,C,Completed
+E1030,30,C106,Statistics for Data Science,Prof. Iyer,30,A+,Completed
+E1031,31,C107,Power BI,Dr. Singh,25,A,In Progress
+E1032,32,C108,AI Fundamentals,Prof. Verma,45,A+,Completed
+E1033,33,C101,Python Programming,Dr. Mehta,40,A+,In Progress
+E1034,34,C102,SQL Fundamentals,Prof. Sharma,35,B+,In Progress
+E1035,35,C103,Data Analytics,Dr. Nair,45,B+,Completed
+E1036,36,C104,Machine Learning,Prof. Patel,50,B+,In Progress
+E1037,37,C105,Web Development,Dr. Rao,40,A,Not Started
+E1038,38,C106,Statistics for Data Science,Prof. Iyer,30,B+,Not Started
+E1039,39,C107,Power BI,Dr. Singh,25,A+,Not Started
+E1040,40,C108,AI Fundamentals,Prof. Verma,45,A,Not Started
+E1041,41,C101,Python Programming,Dr. Mehta,40,A,Completed
+E1042,42,C102,SQL Fundamentals,Prof. Sharma,35,B,In Progress
+E1043,43,C103,Data Analytics,Dr. Nair,45,B+,Not Started
+E1044,44,C104,Machine Learning,Prof. Patel,50,C,Completed
+E1045,45,C105,Web Development,Dr. Rao,40,B+,Completed
+E1046,46,C106,Statistics for Data Science,Prof. Iyer,30,A,Completed
+E1047,47,C107,Power BI,Dr. Singh,25,B+,In Progress
+E1048,48,C108,AI Fundamentals,Prof. Verma,45,B+,Completed
+E1049,49,C101,Python Programming,Dr. Mehta,40,A,Not Started
+E1050,50,C102,SQL Fundamentals,Prof. Sharma,35,B+,Completed
+E1051,1,C104,Machine Learning,Prof. Patel,50,B,In Progress
+E1052,5,C108,AI Fundamentals,Prof. Verma,45,B,Completed
+E1053,10,C105,Web Development,Dr. Rao,40,B+,Completed
+E1054,15,C102,SQL Fundamentals,Prof. Sharma,35,A,In Progress
+E1055,20,C107,Power BI,Dr. Singh,25,C,In Progress
+E1056,25,C104,Machine Learning,Prof. Patel,50,C,In Progress
+E1057,30,C101,Python Programming,Dr. Mehta,40,B+,Completed
+E1058,35,C106,Statistics for Data Science,Prof. Iyer,30,A,In Progress
+E1059,40,C103,Data Analytics,Dr. Nair,45,A+,Completed
+E1060,45,C108,AI Fundamentals,Prof. Verma,45,A+,Completed
