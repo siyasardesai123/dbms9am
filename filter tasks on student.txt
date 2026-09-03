@@ -18,3 +18,20 @@ Find the department with the lowest average Python score.
 Find the average Python score for students in each department, but display only departments where the average is above 75.
 Find the number of students in each department who have a Machine Learning score greater than 80.
 Find the gender-wise average score for Python, SQL, and Machine Learning, and sort the result by average Machine Learning score from highest to lowest.
+
+-- Questions on joins  -- join student & course_enrollment tables
+INNER JOIN:Join students and course_enrollment using Student_ID. Display Student_ID, Name, Course_Name, and Grade.
+LEFT JOIN:Perform a LEFT JOIN between students and course_enrollment. Display all students, including students who have no course enrollment.
+RIGHT JOIN:Perform a RIGHT JOIN between students and course_enrollment using Student_ID. Display the student name and course details.
+Filtering after JOIN:Join the two datasets and display students who are enrolled in "Python Programming".
+Grade-based JOIN:Join the datasets and display students who received a grade of A or A+.
+Department-wise courses:Join the datasets and find how many courses are taken by students from each Department.
+Completion status:Join the datasets and display all students whose Completion_Status is "Completed".
+Multiple columns:After joining the datasets, display Name, Department, Course_Name, Instructor, and Course_Duration_Hours.
+Average course duration:Join the datasets and calculate the average course duration for students in each department.
+Multiple enrollments:Identify students who are enrolled in more than one course. Display their Student_ID, Name, and number of courses.
+Instructor analysis:Join the datasets and determine how many students are enrolled under each Instructor.
+Incomplete courses:Display the names of students who have a course with Completion_Status = "In Progress".
+Department + course analysis:Find the number of enrollments for each combination of Department and Course_Name.
+JOIN + sorting:Join the datasets and display students along with their courses, sorted by Grade from highest to lowest.
+Challenge – JOIN + GROUP BY:Find the average grade/score for each course and identify the course with the highest average performance.
